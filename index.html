@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadej Pogačar – a carreira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f6f7f9;
+  --ink: #14213d;
+  --muted: #55607a;
+  --line: #d3d8e2;
+  --yellow: #ffd60a;
+  --red: #c8102e;
+  --display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1729;
+    --ink: #eef1f7;
+    --muted: #a3adc4;
+    --line: #2b3652;
+    --red: #ff5a6e;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+a { color: inherit; }
+a:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+
+.hero {
+  background: var(--yellow);
+  color: #14213d;
+  padding: clamp(2.5rem, 8vw, 6rem) clamp(1.25rem, 6vw, 5rem) clamp(2rem, 5vw, 4rem);
+}
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(4rem, 17vw, 13rem);
+  line-height: .86;
+  letter-spacing: -.01em;
+  margin: 0;
+  text-transform: uppercase;
+}
+.hero p {
+  max-width: 34rem;
+  margin: 1.75rem 0 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.hero .tag {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+main { max-width: 52rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
+section { padding-top: 3.5rem; }
+h2 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 0 0 1.5rem;
+}
+
+.timeline { list-style: none; margin: 0; padding: 0 0 0 1.5rem; border-left: 3px solid var(--yellow); }
+.timeline li { position: relative; padding-bottom: 2rem; }
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.5rem - 8px);
+  top: .55rem;
+  width: 13px; height: 13px;
+  background: var(--bg);
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+}
+.timeline h3 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  margin: 0 0 .25rem;
+}
+.timeline p { margin: 0; max-width: 40rem; }
+
+.palmares { display: grid; gap: 0; margin: 0; }
+.palmares div {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+.palmares div:last-child { border-bottom: 1px solid var(--line); }
+.palmares dt { font-family: var(--display); font-weight: 800; font-size: 1.4rem; line-height: 1.2; }
+.palmares dd { margin: 0; }
+.palmares .gap { color: var(--red); font-weight: 600; }
+
+.note { color: var(--muted); font-size: .95rem; margin-top: 3rem; }
+
+@media (max-width: 560px) {
+  .palmares div { grid-template-columns: 1fr; gap: .15rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="tag">Ciclista esloveno, UAE Team Emirates-XRG</p>
+  <h1>Tadej<br>Pogačar</h1>
+  <p>Nascido em 1998, em Komenda, na Eslovénia. Aos 27 anos já é cinco vezes vencedor do Tour de France e um dos maiores ciclistas de sempre.</p>
+</header>
+
+<main>
+  <section id="percurso">
+    <h2>Percurso</h2>
+    <ol class="timeline">
+      <li>
+        <h3>2019 – A estreia</h3>
+        <p>Primeira época como profissional na UAE Team Emirates. Ganha a Volta à Califórnia e termina a Vuelta no 3.º lugar, com três vitórias em etapas.</p>
+      </li>
+      <li>
+        <h3>2020 – Primeiro Tour</h3>
+        <p>Vence o Tour de France aos 21 anos, ao ganhar à última hora o contrarrelógio de La Planche des Belles Filles a Primož Roglič. Leva também as camisolas de montanha e de jovem.</p>
+      </li>
+      <li>
+        <h3>2021 – Bicampeão</h3>
+        <p>Repete no Tour e junta a Liège–Bastogne–Liège e a Il Lombardia, as duas primeiras de muitas vitórias nos Monumentos.</p>
+      </li>
+      <li>
+        <h3>2022 e 2023 – O duelo com Vingegaard</h3>
+        <p>Fica em segundo no Tour nos dois anos, atrás de Jonas Vingegaard. Em 2023 ganha o Tour da Flandres, a Flèche Wallonne e a Paris–Nice, e em ambas as épocas leva a Il Lombardia.</p>
+      </li>
+      <li>
+        <h3>2024 – A tripla coroa</h3>
+        <p>Ganha o Giro, o Tour e o Campeonato do Mundo no mesmo ano, algo que quase nenhum ciclista tinha conseguido. No Mundial de Zurique ataca a cerca de 100 km da meta.</p>
+      </li>
+      <li>
+        <h3>2025 – Campeão do mundo outra vez</h3>
+        <p>Conquista o quarto Tour e, em Kigali, no Ruanda, o segundo título mundial consecutivo. Fecha o ano a vencer a Il Lombardia pela quinta vez.</p>
+      </li>
+      <li>
+        <h3>2026 – Cinco Tours</h3>
+        <p>Abre a época com a quarta Strade Bianche e a primeira Milano–Sanremo, e junta o Tour da Flandres, a Liège–Bastogne–Liège, a Volta à Romandia e a Volta à Suíça. Em julho ganha o quinto Tour, com cinco vitórias em etapas e 6 min 26 s de vantagem sobre Remco Evenepoel, igualando Anquetil, Merckx, Hinault e Induráin.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="palmares">
+    <h2>Palmarés em resumo</h2>
+    <dl class="palmares">
+      <div>
+        <dt>Tour de France</dt>
+        <dd>2020, 2021, 2024, 2025 e 2026</dd>
+      </div>
+      <div>
+        <dt>Giro d’Italia</dt>
+        <dd>2024</dd>
+      </div>
+      <div>
+        <dt>Mundial de estrada</dt>
+        <dd>2024 (Zurique) e 2025 (Kigali)</dd>
+      </div>
+      <div>
+        <dt>Monumentos</dt>
+        <dd>Il Lombardia (cinco vezes, de 2021 a 2025), Liège–Bastogne–Liège, Tour da Flandres e Milano–Sanremo (2026)</dd>
+      </div>
+      <div>
+        <dt>Falta ganhar</dt>
+        <dd class="gap">Paris–Roubaix, o único Monumento que lhe escapou, e a Vuelta, onde foi 3.º em 2019</dd>
+      </div>
+    </dl>
+    <p class="note">Mais de 120 vitórias como profissional até junho de 2026. Dados confirmados em notícias e páginas oficiais de equipa e organizações; os totais podem mudar com novas corridas.</p>
+  </section>
+</main>
+
+</body>
+</html>
